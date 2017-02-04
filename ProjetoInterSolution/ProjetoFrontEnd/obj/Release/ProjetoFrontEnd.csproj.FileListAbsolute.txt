@@ -1,0 +1,7 @@
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoFrontEnd.dll
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoFrontEnd.pdb
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoBackEnd.dll
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoBackEnd.pdb
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoFrontEnd\obj\Release\ProjetoFrontEnd.csprojResolveAssemblyReference.cache
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoFrontEnd\obj\Release\ProjetoFrontEnd.dll
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoFrontEnd\obj\Release\ProjetoFrontEnd.pdb

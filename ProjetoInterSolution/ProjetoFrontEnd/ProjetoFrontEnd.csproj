@@ -1,0 +1,984 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{396122E6-C51B-46EA-A171-6C26B200FF61}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjetoFrontEnd</RootNamespace>
+    <AssemblyName>ProjetoFrontEnd</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ajax\GetAtiva.aspx" />
+    <Content Include="Ajax\GetCalendar.aspx" />
+    <Content Include="Ajax\GetCidade.aspx" />
+    <Content Include="Ajax\GetCompany.aspx" />
+    <Content Include="Ajax\GetCustomer.aspx" />
+    <Content Include="Ajax\GetDependency.aspx" />
+    <Content Include="Ajax\GetDocument.aspx" />
+    <Content Include="Ajax\GetGantt.aspx" />
+    <Content Include="Ajax\GetListProject.aspx" />
+    <Content Include="Ajax\GetProject.aspx" />
+    <Content Include="Ajax\GetReport.aspx" />
+    <Content Include="Ajax\GetResourceHuman.aspx" />
+    <Content Include="Ajax\GetResourceMaterial.aspx" />
+    <Content Include="bootstrap-3.2.0-dist\css\bootstrap-theme.css" />
+    <Content Include="bootstrap-3.2.0-dist\css\bootstrap-theme.min.css" />
+    <Content Include="bootstrap-3.2.0-dist\css\bootstrap.css" />
+    <Content Include="bootstrap-3.2.0-dist\css\bootstrap.min.css" />
+    <Content Include="bootstrap-3.2.0-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap-3.2.0-dist\js\bootstrap.js" />
+    <Content Include="bootstrap-3.2.0-dist\js\bootstrap.min.js" />
+    <Content Include="Css\bootstrap.min.css" />
+    <Content Include="Css\demo.min.css" />
+    <Content Include="Css\font-awesome.min.css" />
+    <Content Include="Css\invoice.min.css" />
+    <Content Include="Css\lockscreen.min.css" />
+    <Content Include="Css\smartadmin-production.min.css" />
+    <Content Include="Css\smartadmin-rtl.min.css" />
+    <Content Include="Css\smartadmin-skins.min.css" />
+    <Content Include="Fonts\fontawesome-webfont.svg" />
+    <Content Include="Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Fonts\fonts.googleapis.css" />
+    <Content Include="Images\ajax-loader.gif" />
+    <Content Include="Images\alpha.png" />
+    <Content Include="Images\avatars\male.png" />
+    <Content Include="Images\avatars\user.jpg" />
+    <Content Include="Images\avatars\vader.jpg" />
+    <Content Include="Images\blank.gif" />
+    <Content Include="Images\clear.png" />
+    <Content Include="Images\favicon.png" />
+    <Content Include="Images\flags\flags.png" />
+    <Content Include="Images\gradient\login.png" />
+    <Content Include="Images\hue.png" />
+    <Content Include="Images\jcrop\Jcrop.gif" />
+    <Content Include="Images\jqueryui\ui-bg_flat_0_999999_40x100.png" />
+    <Content Include="Images\jqueryui\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Images\jqueryui\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Images\jqueryui\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Images\jqueryui\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Images\jqueryui\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Images\jqueryui\ui-bg_glass_75_ffffff_1x400.png" />
+    <Content Include="Images\jqueryui\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Images\jqueryui\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="Images\jqueryui\ui-icons_222222_256x240.png" />
+    <Content Include="Images\jqueryui\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Images\jqueryui\ui-icons_428bca_256x240.png" />
+    <Content Include="Images\jqueryui\ui-icons_454545_256x240.png" />
+    <Content Include="Images\jqueryui\ui-icons_555555_256x240.png" />
+    <Content Include="Images\jqueryui\ui-icons_888888_256x240.png" />
+    <Content Include="Images\jqueryui\ui-icons_999999_256x240.png" />
+    <Content Include="Images\jqueryui\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Images\jqueryui\ui-icons_f0ad4e_256x240 %281%29.png" />
+    <Content Include="Images\jqueryui\ui-icons_f0ad4e_256x240.png" />
+    <Content Include="Images\jqueryui\ui-icons_f6cf3b_256x240.png" />
+    <Content Include="Images\jqueryui\ui-icons_ffffff_256x240.png" />
+    <Content Include="Images\mybg.png" />
+    <Content Include="Images\overlay-pattern.png" />
+    <Content Include="Images\pattern\divider.jpg" />
+    <Content Include="Images\pattern\graphy-xs.png" />
+    <Content Include="Images\pattern\graphy.png" />
+    <Content Include="Images\pattern\lightpaperfibers.png" />
+    <Content Include="Images\pattern\movable.png" />
+    <Content Include="Images\pattern\nistri-xs.png" />
+    <Content Include="Images\pattern\nistri.png" />
+    <Content Include="Images\pattern\overlay-pattern.png" />
+    <Content Include="Images\pattern\paper-xs.png" />
+    <Content Include="Images\pattern\paper.png" />
+    <Content Include="Images\pattern\pattern.png" />
+    <Content Include="Images\pattern\sneaker_mesh_fabric-xs.png" />
+    <Content Include="Images\pattern\sneaker_mesh_fabric.png" />
+    <Content Include="Images\pattern\tileable_wood_texture-xs.png" />
+    <Content Include="Images\pattern\tileable_wood_texture.png" />
+    <Content Include="Images\plus.png" />
+    <Content Include="Images\saturation.png" />
+    <Content Include="Images\select2-spinner.gif" />
+    <Content Include="Images\sort_asc.png" />
+    <Content Include="Images\sort_asc_disabled.png" />
+    <Content Include="Images\sort_both.png" />
+    <Content Include="Images\sort_desc.png" />
+    <Content Include="Images\sort_desc_disabled.png" />
+    <Content Include="Images\ui\ui-bg_flat_0_999999_40x100.png" />
+    <Content Include="Images\ui\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Images\ui\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Images\ui\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Images\ui\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Images\ui\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Images\ui\ui-bg_glass_75_ffffff_1x400.png" />
+    <Content Include="Images\ui\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Images\ui\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="Images\ui\ui-icons_222222_256x240.png" />
+    <Content Include="Images\ui\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Images\ui\ui-icons_428bca_256x240.png" />
+    <Content Include="Images\ui\ui-icons_454545_256x240.png" />
+    <Content Include="Images\ui\ui-icons_555555_256x240.png" />
+    <Content Include="Images\ui\ui-icons_888888_256x240.png" />
+    <Content Include="Images\ui\ui-icons_999999_256x240.png" />
+    <Content Include="Images\ui\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Images\ui\ui-icons_f0ad4e_256x240.png" />
+    <Content Include="Images\ui\ui-icons_f6cf3b_256x240.png" />
+    <Content Include="Images\ui\ui-icons_ffffff_256x240.png" />
+    <Content Include="Images\user.jpg" />
+    <Content Include="Images\vt-menu.png" />
+    <Content Include="Images\__utm.gif" />
+    <Content Include="Js\app.config.js" />
+    <Content Include="Js\app.min.js" />
+    <Content Include="Js\bootstrap\bootstrap.min.js" />
+    <Content Include="Js\Chart\Chart.js" />
+    <Content Include="Js\Chart\Chart.min.js" />
+    <Content Include="Js\Chart\gulpfile.js" />
+    <Content Include="Js\Chart\samples\bar.html" />
+    <Content Include="Js\Chart\samples\doughnut.html" />
+    <Content Include="Js\Chart\samples\line.html" />
+    <Content Include="Js\Chart\samples\pie.html" />
+    <Content Include="Js\Chart\samples\polar-area.html" />
+    <Content Include="Js\Chart\samples\radar.html" />
+    <Content Include="Js\Chart\src\Chart.Bar.js" />
+    <Content Include="Js\Chart\src\Chart.Core.js" />
+    <Content Include="Js\Chart\src\Chart.Doughnut.js" />
+    <Content Include="Js\Chart\src\Chart.Line.js" />
+    <Content Include="Js\Chart\src\Chart.PolarArea.js" />
+    <Content Include="Js\Chart\src\Chart.Radar.js" />
+    <Content Include="Js\company\edit.js" />
+    <Content Include="Js\customer\edit.js" />
+    <Content Include="Js\demo.min.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\dhtmlxgantt.css" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\dhtmlxgantt.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\ext\dhtmlxgantt_marker.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\ext\dhtmlxgantt_quick_info.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\ext\dhtmlxgantt_tooltip.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_ar.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_be.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_ca.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_cn.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_cs.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_da.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_de.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_el.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_es.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_fi.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_fr.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_he.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_hu.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_id.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_it.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_jp.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_nb.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_nl.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_no.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_pl.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_pt.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_ro.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_ru.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_si.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_sk.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_sv.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_tr.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\locale_ua.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\skins\dhtmlxgantt_broadway.css" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\skins\dhtmlxgantt_meadow.css" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\skins\dhtmlxgantt_skyblue.css" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\skins\dhtmlxgantt_terrace.css" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\dhtmlxgantt.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\ext\dhtmlxgantt_marker.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\ext\dhtmlxgantt_quick_info.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\ext\dhtmlxgantt_tooltip.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_ar.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_be.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_ca.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_cn.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_cs.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_da.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_de.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_el.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_es.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_fi.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_fr.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_he.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_hu.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_id.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_it.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_jp.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_nb.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_nl.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_no.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_pl.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_pt.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_ro.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_ru.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_si.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_sk.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_sv.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_tr.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_ua.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\skins\dhtmlxgantt_broadway.css" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\skins\dhtmlxgantt_meadow.css" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\skins\dhtmlxgantt_skyblue.css" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\skins\dhtmlxgantt_terrace.css" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\license.txt" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\readme.txt" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\01_initialization\01_basic_init.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\01_initialization\02_load_json.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\01_initialization\03_load_xml.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\01_initialization\04_connector_json.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\01_initialization\05_connector_xml.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\01_initialization\06_touch_forced.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\01_initialization\07_jquery.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\01_initialization\08_explicit_time_range.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\01_initialization\09_backward_compatibility.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\01_initialization\10_fixed_size.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\01_initialization\11_clickable_links.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\01_initialization\12_localization.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\01_initialization\13_project_duration.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\01_initialization\14_reinitializtion.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\01_initialization\15_connector_json_enddate.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\01_initialization\17_bootstrap.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\01_initialization\index.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\02_extensions\01_quickinfo.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\02_extensions\02_tooltip.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\02_extensions\05_today_line.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\02_extensions\index.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\03_scales\01_multiple_scales.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\03_scales\02_month_days.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\03_scales\03_full_year.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\03_scales\04_days.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\03_scales\05_dynamic_scales.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\03_scales\06_custom_scales.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\03_scales\07_minutes_scale.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\03_scales\08_scale_autoconfig.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\03_scales\10_working_hours.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\03_scales\11_select_column.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\03_scales\index.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\04_customization\01_outer_content.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\04_customization\02_custom_tree.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\04_customization\03_link_styles.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\04_customization\04_task_styles.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\04_customization\05_tree_template.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\04_customization\06_highlight_weekend.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\04_customization\07_progress_text.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\04_customization\08_templates.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\04_customization\09_html_content.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\04_customization\10_context_menu.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\04_customization\11_split_task.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\04_customization\13_autosize_container.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\04_customization\16_inline_task_colors.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\04_customization\common\deadline_icon.png" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\04_customization\index.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\05_lightbox\01_lightbox_customization.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\05_lightbox\02_progress_lightbox.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\05_lightbox\02_select.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\05_lightbox\03_validation.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\05_lightbox\04_custom_editor.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\05_lightbox\05_template.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\05_lightbox\06_custom_button.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\05_lightbox\07_time.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\05_lightbox\08_parent_selector.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\05_lightbox\common\v_complete.png" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\05_lightbox\index.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\06_skins\01_default.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\06_skins\02_default_lightbox.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\06_skins\03_skyblue.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\06_skins\04_meadow.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\06_skins\05_broadway.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\06_skins\index.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\07_grid\01_builtin_sorting.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\07_grid\02_branch_ordering.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\07_grid\03_filtering.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\07_grid\04_custom_sorting.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\07_grid\05_sort_api.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\07_grid\06_without_grid.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\07_grid\index.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\08_api\01_dnd_events.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\08_api\02_constraints.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\08_api\03_validation.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\08_api\04_limit_project.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\08_api\05_limit_drag_dates.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\08_api\06_export.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\08_api\07_export_styles.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\08_api\08_export_other.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\08_api\09_export_store.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\08_api\index.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\09_worktime\01_working_hours_per_day.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\09_worktime\02_working_days.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\09_worktime\03_exclude_holidays.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\09_worktime\04_custom_workday_duration.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\09_worktime\05_adjust_to_worktime.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\09_worktime\index.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\customstyles.css" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\data.xml" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\dhtmlxcommon.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\dhtmlxmenu.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\dhtmlxmenu_deprecated.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\ext\dhtmlxmenu_effects.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\ext\dhtmlxmenu_ext.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_black\dhtmlxmenu_bg.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_black\dhtmlxmenu_chrd.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_black\dhtmlxmenu_loader.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_black\dhtmlxmenu_subar.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_black\dhtmlxmenu_subsepbg.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_black\dhtmlxmenu_upar.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_blue\dhtmlxmenu_bg.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_blue\dhtmlxmenu_chrd.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_blue\dhtmlxmenu_loader.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_blue\dhtmlxmenu_subar.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_blue\dhtmlxmenu_subsepbg.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_blue\dhtmlxmenu_upar.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_skyblue\dhtmlxmenu_chrd.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_skyblue\dhtmlxmenu_loader.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_skyblue\dhtmlxmenu_subar.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_skyblue\dhtmlxmenu_upar.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_skyblue\dhxmenu_bg_acccell.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_skyblue\dhxmenu_subselbg.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_skyblue\dhxmenu_subsepbg.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_skyblue\dhxmenu_topselbg.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_skyblue\dhxmenu_topsepbg.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_terrace\dhtmlxmenu_chrd.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_terrace\dhtmlxmenu_loader.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_terrace\dhtmlxmenu_subar.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_terrace\dhxmenu_bg_item.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_terrace\dhxmenu_bg_item_sel.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_terrace\dhxmenu_bg_subsep.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_web\dhxmenu_chrd.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_web\dhxmenu_loader.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_web\dhxmenu_subar.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_web\dhxmenu_subselbg.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_web\dhxmenu_subsepbg.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_web\dhxmenu_topbg.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_web\dhxmenu_topselbg.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_web\dhxmenu_topsepbg.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_web\dhxmenu_upar.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_skyblue\dhxmenu_arrow_down.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_skyblue\dhxmenu_arrow_down_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_skyblue\dhxmenu_arrow_up.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_skyblue\dhxmenu_arrow_up_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_skyblue\dhxmenu_chrd.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_skyblue\dhxmenu_loader.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_skyblue\dhxmenu_subar.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_terrace\dhxmenu_arrow_down.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_terrace\dhxmenu_arrow_down_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_terrace\dhxmenu_arrow_up.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_terrace\dhxmenu_arrow_up_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_terrace\dhxmenu_chrd.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_terrace\dhxmenu_loader.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_terrace\dhxmenu_subar.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_web\dhxmenu_arrow_down.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_web\dhxmenu_arrow_down_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_web\dhxmenu_arrow_up.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_web\dhxmenu_arrow_up_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_web\dhxmenu_chrd.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_web\dhxmenu_loader.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_web\dhxmenu_subar.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\about.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\about_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\bug_reporting.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\bug_reporting_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\close.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\close_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\copy.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\copy_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\cut.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\cut_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\help.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\help_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\new.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\new_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\open.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\open_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\page_setup.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\page_setup_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\paste.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\paste_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\print.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\print_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\redo.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\redo_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\save.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\save_as.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\save_as_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\save_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\select_all.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\select_all_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\undo.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\undo_dis.gif" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\skins\dhtmlxmenu_dhx_black.css" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\skins\dhtmlxmenu_dhx_blue.css" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\skins\dhtmlxmenu_dhx_skyblue.css" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\skins\dhtmlxmenu_dhx_terrace.css" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\skins\dhtmlxmenu_dhx_web.css" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhxmenu.xml" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\docs.css" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dump.sql" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\olddata.xml" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\testdata.js" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\index.html" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\readme.txt" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\whatsnew.txt" />
+    <Content Include="Js\document\edit.js" />
+    <Content Include="Js\FileUp\AjaxUpload.js" />
+    <Content Include="Js\gantt\startGantt.js" />
+    <Content Include="Js\jquery-2.0.2.js" />
+    <Content Include="Js\jquery-ui.min.js" />
+    <Content Include="Js\jquery.min.js" />
+    <Content Include="Js\libs\jquery-2.0.2.min.js" />
+    <Content Include="Js\libs\jquery-ui-1.10.3.min.js" />
+    <Content Include="Js\MaskMoney.js" />
+    <Content Include="Js\notification\SmartNotification.min.js" />
+    <Content Include="Js\plugin\bootstrap-progressbar\bootstrap-progressbar.min.js" />
+    <Content Include="Js\plugin\bootstrap-wizard\jquery.bootstrap.wizard.min.js" />
+    <Content Include="Js\plugin\bootstraptree\bootstrap-tree.min.js" />
+    <Content Include="Js\plugin\datatable-responsive\datatables.responsive.min.js" />
+    <Content Include="Js\plugin\datatables\dataTables.bootstrap.min.js" />
+    <Content Include="Js\plugin\datatables\dataTables.colReorder.min.js" />
+    <Content Include="Js\plugin\datatables\dataTables.colVis.min.js" />
+    <Content Include="Js\plugin\datatables\dataTables.tableTools.min.js" />
+    <Content Include="Js\plugin\datatables\jquery.dataTables.min.js" />
+    <Content Include="Js\plugin\datatables\swf\copy_csv_xls.swf" />
+    <Content Include="Js\plugin\datatables\swf\copy_csv_xls_pdf.swf" />
+    <Content Include="Js\plugin\easy-pie-chart\jquery.easy-pie-chart.min.js" />
+    <Content Include="Js\plugin\fullcalendar\jquery.fullcalendar.min.js" />
+    <Content Include="Js\plugin\jquery-form\jquery-form.min.js" />
+    <Content Include="Js\plugin\jquery-nestable\jquery.nestable.min.js" />
+    <Content Include="Js\plugin\jquery-validate\jquery.validate.min.js" />
+    <Content Include="Js\plugin\masked-input\jquery.maskedinput.min.js" />
+    <Content Include="Js\plugin\morris\morris-chart-settings.min.js" />
+    <Content Include="Js\plugin\morris\morris.min.js" />
+    <Content Include="Js\plugin\morris\raphael.min.js" />
+    <Content Include="Js\plugin\pace\pace.min.js" />
+    <Content Include="Js\plugin\select2\readme.txt" />
+    <Content Include="Js\plugin\select2\select2.min.js" />
+    <Content Include="Js\plugin\sparkline\jquery.sparkline.min.js" />
+    <Content Include="Js\plugin\superbox\superbox.min.js" />
+    <Content Include="Js\project\edit.js" />
+    <Content Include="Js\project\editfaseact.js" />
+    <Content Include="Js\project\listproject.js" />
+    <Content Include="Js\reports\CreateReprot.js" />
+    <Content Include="Js\resource\edit.js" />
+    <Content Include="Js\smartwidgets\jarvis.widget.min.js" />
+    <Content Include="Js\speech\voicecommand.min.js" />
+    <Content Include="View\Account.aspx" />
+    <Content Include="View\Activities.aspx" />
+    <Content Include="View\Admin.aspx" />
+    <Content Include="View\Calendar.aspx" />
+    <Content Include="View\Companies.aspx" />
+    <Content Include="View\Customers.aspx" />
+    <Content Include="View\Documents.aspx" />
+    <Content Include="View\ForgotLogin.aspx" />
+    <Content Include="View\Gantt.aspx" />
+    <Content Include="View\Home.aspx" />
+    <Content Include="View\Index.aspx" />
+    <Content Include="View\ListProject.aspx" />
+    <Content Include="View\Login.aspx" />
+    <Content Include="View\Notifications.aspx" />
+    <Content Include="View\Projects.aspx" />
+    <Content Include="View\Reports.aspx" />
+    <Content Include="View\Resources.aspx" />
+    <Content Include="View\Search.aspx" />
+    <Content Include="View\Table.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ajax\FileUpload.ashx.cs">
+      <DependentUpon>FileUpload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\FileUploadDoc.ashx.cs">
+      <DependentUpon>FileUploadDoc.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\GetAtiva.aspx.cs">
+      <DependentUpon>GetAtiva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\GetAtiva.aspx.designer.cs">
+      <DependentUpon>GetAtiva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\GetCalendar.aspx.cs">
+      <DependentUpon>GetCalendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\GetCalendar.aspx.designer.cs">
+      <DependentUpon>GetCalendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\GetCidade.aspx.cs">
+      <DependentUpon>GetCidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\GetCidade.aspx.designer.cs">
+      <DependentUpon>GetCidade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\GetCompany.aspx.cs">
+      <DependentUpon>GetCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\GetCompany.aspx.designer.cs">
+      <DependentUpon>GetCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\GetCustomer.aspx.cs">
+      <DependentUpon>GetCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\GetCustomer.aspx.designer.cs">
+      <DependentUpon>GetCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\GetDependency.aspx.cs">
+      <DependentUpon>GetDependency.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\GetDependency.aspx.designer.cs">
+      <DependentUpon>GetDependency.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\GetDocument.aspx.cs">
+      <DependentUpon>GetDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\GetDocument.aspx.designer.cs">
+      <DependentUpon>GetDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\GetGantt.aspx.cs">
+      <DependentUpon>GetGantt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\GetGantt.aspx.designer.cs">
+      <DependentUpon>GetGantt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\GetListProject.aspx.cs">
+      <DependentUpon>GetListProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\GetListProject.aspx.designer.cs">
+      <DependentUpon>GetListProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\GetProject.aspx.cs">
+      <DependentUpon>GetProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\GetProject.aspx.designer.cs">
+      <DependentUpon>GetProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\GetReport.aspx.cs">
+      <DependentUpon>GetReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\GetReport.aspx.designer.cs">
+      <DependentUpon>GetReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\GetResourceHuman.aspx.cs">
+      <DependentUpon>GetResourceHuman.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\GetResourceHuman.aspx.designer.cs">
+      <DependentUpon>GetResourceHuman.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\GetResourceMaterial.aspx.cs">
+      <DependentUpon>GetResourceMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\GetResourceMaterial.aspx.designer.cs">
+      <DependentUpon>GetResourceMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Account.aspx.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Account.aspx.designer.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Activities.aspx.cs">
+      <DependentUpon>Activities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Activities.aspx.designer.cs">
+      <DependentUpon>Activities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Calendar.aspx.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Calendar.aspx.designer.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Companies.aspx.cs">
+      <DependentUpon>Companies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Companies.aspx.designer.cs">
+      <DependentUpon>Companies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Customers.aspx.cs">
+      <DependentUpon>Customers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Customers.aspx.designer.cs">
+      <DependentUpon>Customers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Documents.aspx.cs">
+      <DependentUpon>Documents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Documents.aspx.designer.cs">
+      <DependentUpon>Documents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\ForgotLogin.aspx.cs">
+      <DependentUpon>ForgotLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\ForgotLogin.aspx.designer.cs">
+      <DependentUpon>ForgotLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Gantt.aspx.cs">
+      <DependentUpon>Gantt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Gantt.aspx.designer.cs">
+      <DependentUpon>Gantt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\ListProject.aspx.cs">
+      <DependentUpon>ListProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\ListProject.aspx.designer.cs">
+      <DependentUpon>ListProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Notifications.aspx.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Notifications.aspx.designer.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Projects.aspx.cs">
+      <DependentUpon>Projects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Projects.aspx.designer.cs">
+      <DependentUpon>Projects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Resources.aspx.cs">
+      <DependentUpon>Resources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Resources.aspx.designer.cs">
+      <DependentUpon>Resources.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Table.aspx.cs">
+      <DependentUpon>Table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Table.aspx.designer.cs">
+      <DependentUpon>Table.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap-3.2.0-dist\css\bootstrap-theme.css.map" />
+    <Content Include="bootstrap-3.2.0-dist\css\bootstrap.css.map" />
+    <Content Include="bootstrap-3.2.0-dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bootstrap-3.2.0-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bootstrap-3.2.0-dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Fonts\fontawesome-webfont.eot" />
+    <Content Include="Fonts\fontawesome-webfont.ttf" />
+    <Content Include="Fonts\fontawesome-webfont.woff" />
+    <Content Include="Fonts\FontAwesome.otf" />
+    <Content Include="Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Js\jquery.min.map" />
+    <Content Include="Ajax\FileUpload.ashx" />
+    <Content Include="Documents\teste.pdf" />
+    <Content Include="Js\Chart\.gitignore" />
+    <Content Include="Js\Chart\bower.json" />
+    <Content Include="Js\Chart\CONTRIBUTING.md" />
+    <Content Include="Js\Chart\desktop.ini" />
+    <Content Include="Js\Chart\docs\00-Getting-Started.md" />
+    <Content Include="Js\Chart\docs\01-Line-Chart.md" />
+    <Content Include="Js\Chart\docs\02-Bar-Chart.md" />
+    <Content Include="Js\Chart\docs\03-Radar-Chart.md" />
+    <Content Include="Js\Chart\docs\04-Polar-Area-Chart.md" />
+    <Content Include="Js\Chart\docs\05-Pie-Doughnut-Chart.md" />
+    <Content Include="Js\Chart\docs\06-Advanced.md" />
+    <Content Include="Js\Chart\docs\07-Notes.md" />
+    <Content Include="Js\Chart\docs\desktop.ini" />
+    <Content Include="Js\Chart\LICENSE.md" />
+    <Content Include="Js\Chart\package.json" />
+    <Content Include="Js\Chart\README.md" />
+    <Content Include="Js\Chart\samples\desktop.ini" />
+    <Content Include="Js\Chart\src\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\base_connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\chart_connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\combo_connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\convert.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\crosslink_connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\dataprocessor.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\dataview_connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\data_connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\db_adodb.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\db_common.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\db_excel.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\db_filesystem.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\db_mssql.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\db_mysqli.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\db_oracle.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\db_pdo.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\db_phpcake.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\db_phpci.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\db_phpyii.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\db_postgre.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\db_sasql.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\db_sqlite.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\db_sqlite3.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\db_sqlsrv.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\filesystem_item.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\form_connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\gantt_connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\grid_config.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\grid_connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\keygrid_connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\mixed_connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\options_connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\scheduler_connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\strategy.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\tools.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\treedatagroup_connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\treedatamultitable_connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\treegridgroup_connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\treegridmultitable_connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\treegrid_connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\treegroup_connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\treemultitable_connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\tree_connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\update.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\connector\xss_filter.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\ext\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\locale\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\skins\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\dhtmlxgantt.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\ext\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\ext\dhtmlxgantt_marker.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\ext\dhtmlxgantt_quick_info.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\ext\dhtmlxgantt_tooltip.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_ar.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_be.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_ca.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_cn.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_cs.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_da.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_de.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_el.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_es.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_fi.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_fr.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_he.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_hu.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_id.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_it.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_jp.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_nb.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_nl.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_no.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_pl.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_pt.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_ro.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_ru.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_si.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_sk.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_sv.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_tr.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\locale\locale_ua.js.map" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\codebase\sources\skins\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\01_initialization\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\02_extensions\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\03_scales\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\04_customization\common\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\04_customization\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\05_lightbox\common\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\05_lightbox\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\06_skins\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\07_grid\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\08_api\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\09_worktime\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\config.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\connector.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\connector_dynamic_loading.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\connector_enddate.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\connector_extra.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\connector_xml.php" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\data.json" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\ext\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_black\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_blue\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_skyblue\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_terrace\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_web\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_skyblue\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_terrace\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\imgs\dhxmenu_web\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\sample_images\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\dhtmlxMenu\skins\desktop.ini" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\loaddata.json" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\common\samples.sqlite" />
+    <Content Include="Js\dhtmlxGantt_v3.1.0_gpl\samples\desktop.ini" />
+    <Content Include="Ajax\FileUploadDoc.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\Logo\" />
+    <Folder Include="Images\uploads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjetoBackEnd\ProjetoBackEnd.csproj">
+      <Project>{df625ad2-9c7a-41c4-ad96-6151db7d7432}</Project>
+      <Name>ProjetoBackEnd</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="View\App_LocalResources\Login.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="View\App_LocalResources\Login.aspx.en-US.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="View\App_LocalResources\ForgotLogin.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="View\App_LocalResources\ForgotLogin.aspx.en-US.resx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49935/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

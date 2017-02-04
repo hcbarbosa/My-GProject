@@ -1,0 +1,30 @@
+E:\Google Drive\My GProject\Desenvolvimento\marcilio\ProjetoInterSolution\ProjetoBackEnd\bin\Debug\ProjetoBackEnd.dll.config
+E:\Google Drive\My GProject\Desenvolvimento\marcilio\ProjetoInterSolution\ProjetoBackEnd\bin\Debug\ProjetoBackEnd.dll
+E:\Google Drive\My GProject\Desenvolvimento\marcilio\ProjetoInterSolution\ProjetoBackEnd\bin\Debug\ProjetoBackEnd.pdb
+E:\Google Drive\My GProject\Desenvolvimento\marcilio\ProjetoInterSolution\ProjetoBackEnd\obj\Debug\ProjetoBackEnd.dll
+E:\Google Drive\My GProject\Desenvolvimento\marcilio\ProjetoInterSolution\ProjetoBackEnd\obj\Debug\ProjetoBackEnd.pdb
+E:\Google Drive\My GProject\Desenvolvimento\marcilio\ProjetoInterSolution\ProjetoBackEnd\obj\Debug\ProjetoBackEnd.csprojResolveAssemblyReference.cache
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoBackEnd\bin\Debug\ProjetoBackEnd.dll.config
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoBackEnd\bin\Debug\ProjetoBackEnd.dll
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoBackEnd\bin\Debug\ProjetoBackEnd.pdb
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoBackEnd\obj\Debug\ProjetoBackEnd.dll
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoBackEnd\obj\Debug\ProjetoBackEnd.pdb
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoBackEnd\obj\Debug\ProjetoBackEnd.csprojResolveAssemblyReference.cache
+C:\Users\Hanna\Desktop\Interdisciplinar\ProjetoInterSolution\ProjetoBackEnd\bin\Debug\ProjetoBackEnd.dll.config
+C:\Users\Hanna\Desktop\Interdisciplinar\ProjetoInterSolution\ProjetoBackEnd\bin\Debug\ProjetoBackEnd.dll
+C:\Users\Hanna\Desktop\Interdisciplinar\ProjetoInterSolution\ProjetoBackEnd\bin\Debug\ProjetoBackEnd.pdb
+C:\Users\Hanna\Desktop\Interdisciplinar\ProjetoInterSolution\ProjetoBackEnd\obj\Debug\ProjetoBackEnd.csprojResolveAssemblyReference.cache
+C:\Users\Hanna\Desktop\Interdisciplinar\ProjetoInterSolution\ProjetoBackEnd\obj\Debug\ProjetoBackEnd.dll
+C:\Users\Hanna\Desktop\Interdisciplinar\ProjetoInterSolution\ProjetoBackEnd\obj\Debug\ProjetoBackEnd.pdb
+H:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoBackEnd\bin\Debug\ProjetoBackEnd.dll.config
+H:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoBackEnd\bin\Debug\ProjetoBackEnd.dll
+H:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoBackEnd\bin\Debug\ProjetoBackEnd.pdb
+H:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoBackEnd\obj\Debug\ProjetoBackEnd.csprojResolveAssemblyReference.cache
+H:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoBackEnd\obj\Debug\ProjetoBackEnd.dll
+H:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoBackEnd\obj\Debug\ProjetoBackEnd.pdb
+D:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoBackEnd\bin\Debug\ProjetoBackEnd.dll.config
+D:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoBackEnd\bin\Debug\ProjetoBackEnd.dll
+D:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoBackEnd\bin\Debug\ProjetoBackEnd.pdb
+D:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoBackEnd\obj\Debug\ProjetoBackEnd.csprojResolveAssemblyReference.cache
+D:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoBackEnd\obj\Debug\ProjetoBackEnd.dll
+D:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoBackEnd\obj\Debug\ProjetoBackEnd.pdb

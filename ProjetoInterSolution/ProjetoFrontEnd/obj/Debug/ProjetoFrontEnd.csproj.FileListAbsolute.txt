@@ -1,0 +1,44 @@
+E:\Google Drive\My GProject\Desenvolvimento\marcilio\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoFrontEnd.dll
+E:\Google Drive\My GProject\Desenvolvimento\marcilio\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoFrontEnd.pdb
+E:\Google Drive\My GProject\Desenvolvimento\marcilio\ProjetoInterSolution\ProjetoFrontEnd\obj\Debug\ProjetoFrontEnd.csprojResolveAssemblyReference.cache
+E:\Google Drive\My GProject\Desenvolvimento\marcilio\ProjetoInterSolution\ProjetoFrontEnd\obj\Debug\ProjetoFrontEnd.dll
+E:\Google Drive\My GProject\Desenvolvimento\marcilio\ProjetoInterSolution\ProjetoFrontEnd\obj\Debug\ProjetoFrontEnd.pdb
+E:\Google Drive\My GProject\Desenvolvimento\marcilio\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoBackEnd.dll
+E:\Google Drive\My GProject\Desenvolvimento\marcilio\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoBackEnd.pdb
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoFrontEnd.dll
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoFrontEnd.pdb
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoBackEnd.dll
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoBackEnd.pdb
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoFrontEnd\obj\Debug\ProjetoFrontEnd.csprojResolveAssemblyReference.cache
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoFrontEnd\obj\Debug\ProjetoFrontEnd.dll
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoFrontEnd\obj\Debug\ProjetoFrontEnd.pdb
+C:\Users\Hanna\Desktop\Interdisciplinar\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoFrontEnd.dll
+C:\Users\Hanna\Desktop\Interdisciplinar\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoFrontEnd.pdb
+C:\Users\Hanna\Desktop\Interdisciplinar\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoBackEnd.dll
+C:\Users\Hanna\Desktop\Interdisciplinar\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoBackEnd.pdb
+C:\Users\Hanna\Desktop\Interdisciplinar\ProjetoInterSolution\ProjetoFrontEnd\obj\Debug\ProjetoFrontEnd.csprojResolveAssemblyReference.cache
+C:\Users\Hanna\Desktop\Interdisciplinar\ProjetoInterSolution\ProjetoFrontEnd\obj\Debug\ProjetoFrontEnd.dll
+C:\Users\Hanna\Desktop\Interdisciplinar\ProjetoInterSolution\ProjetoFrontEnd\obj\Debug\ProjetoFrontEnd.pdb
+H:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoFrontEnd.dll
+H:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoFrontEnd.pdb
+H:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoBackEnd.dll
+H:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoBackEnd.pdb
+H:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoFrontEnd\obj\Debug\ProjetoFrontEnd.csprojResolveAssemblyReference.cache
+H:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoFrontEnd\obj\Debug\ProjetoFrontEnd.dll
+H:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoFrontEnd\obj\Debug\ProjetoFrontEnd.pdb
+D:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoFrontEnd.dll.config
+D:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoFrontEnd.dll
+D:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoFrontEnd.pdb
+D:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoBackEnd.dll
+D:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoBackEnd.pdb
+D:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoFrontEnd\obj\Debug\ProjetoFrontEnd.csprojResolveAssemblyReference.cache
+D:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoFrontEnd\obj\Debug\ProjetoFrontEnd.dll
+D:\Faculdade\Interdisciplinar 4º\ProjetoInterSolution\ProjetoFrontEnd\obj\Debug\ProjetoFrontEnd.pdb
+D:\Documents\GitHub\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoFrontEnd.dll.config
+D:\Documents\GitHub\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoFrontEnd.dll
+D:\Documents\GitHub\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoFrontEnd.pdb
+D:\Documents\GitHub\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoBackEnd.dll
+D:\Documents\GitHub\ProjetoInterSolution\ProjetoFrontEnd\bin\ProjetoBackEnd.pdb
+D:\Documents\GitHub\ProjetoInterSolution\ProjetoFrontEnd\obj\Debug\ProjetoFrontEnd.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\ProjetoInterSolution\ProjetoFrontEnd\obj\Debug\ProjetoFrontEnd.dll
+D:\Documents\GitHub\ProjetoInterSolution\ProjetoFrontEnd\obj\Debug\ProjetoFrontEnd.pdb

@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 22.75, 22.125" name="BDMyGProject">
+  <DataContextMoniker Name="/BDMyGProjectDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1eb00505-039b-4fac-89f3-29fc67283190" absoluteBounds="14.75, 6.125, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/Atividade" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9006628d-5d1a-4edb-aca4-2482c0bc45c5" absoluteBounds="14.765, 6.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="94b1fe2f-4e69-4248-9c07-090a7c95588c" absoluteBounds="3.5, 12.25, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/Cidade" />
+      <nestedChildShapes>
+        <elementListCompartment Id="324698fc-95bf-4cb7-a091-67e9f734d9d1" absoluteBounds="3.515, 12.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8d6d58b3-516b-40c5-a194-7ae28e674531" absoluteBounds="9, 16.375, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/Cliente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f2b4ec2e-747b-4ee7-9319-fbeb1fb2a655" absoluteBounds="9.015, 16.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="081f45aa-9fcf-4972-97f3-89a0e88bb4cd" absoluteBounds="14.5, 10.375, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/Comentario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="29662cb6-275b-42d8-8330-d5b04a7ccc2a" absoluteBounds="14.515, 10.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="294677c2-9728-43f7-a22b-030bd9e8c41f" absoluteBounds="20.25, 8.625, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/CronogramaRecurso" />
+      <nestedChildShapes>
+        <elementListCompartment Id="91190397-2623-4589-85d0-7b4ae7fc35f4" absoluteBounds="20.265, 9.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5129d769-1aba-49f0-af1c-1d6ea15c6462" absoluteBounds="17.5, 11, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/Cronograma" />
+      <nestedChildShapes>
+        <elementListCompartment Id="682af9cb-e705-47b5-aced-8b32f7a4f8e7" absoluteBounds="17.515, 11.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="70273811-fd2d-42b9-89f0-eda7dd1afc21" absoluteBounds="17.5, 7.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/Dependencia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f3e60933-0a13-4b30-91a7-5f142360bab8" absoluteBounds="17.515, 8.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4adf3b58-f079-48c1-84c4-432b81bb8cbc" absoluteBounds="14.75, 16, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/Documento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="71db87a7-62dc-4137-8096-99c12f9c2b90" absoluteBounds="14.765, 16.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="97ea8c07-a027-42f2-a146-d3f6fbe75555" absoluteBounds="9, 7.625, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/Email" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1cfbcc9e-4b21-499b-9c10-308a3cc4a5bd" absoluteBounds="9.015, 8.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7f349ea9-df3e-43a4-a2a8-e6cfec1f49a0" absoluteBounds="9, 9.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/Empresa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="97e9500b-85e6-4f2a-80df-8ac73ffa68b4" absoluteBounds="9.015, 10.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="054b9130-fd35-4fb1-840d-b2cf618a5213" absoluteBounds="14.75, 13.25, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/EmpresasCliente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="05d16b5a-9cb9-4519-807b-e6852b52fe68" absoluteBounds="14.765, 13.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="66ae4643-5a9d-4cb3-8304-c16398078a23" absoluteBounds="0.75, 12.25, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/Estado" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5f1cde46-670f-408f-88bb-3049eb634e1e" absoluteBounds="0.765, 12.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a8dfb65e-12bc-45ae-9494-c3f3cd4e36b0" absoluteBounds="14.75, 2.25, 2, 2.347801106770834">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/Fase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="28601129-8f43-4efa-acca-eec03b244fa6" absoluteBounds="14.765, 2.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="589e47b2-90d8-4caf-9ec3-fceae5767ef4" absoluteBounds="9, 14, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/Gerente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="585af573-52ce-49c4-baf9-af8a558cb677" absoluteBounds="9.015, 14.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="80625c8b-ac1f-4cb7-ae9d-9c29f7d35542" absoluteBounds="17.5, 13.5, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/Log" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ffaecf38-5073-41a0-b718-e71dcdea18b3" absoluteBounds="17.515, 13.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b83e4b20-ab39-46a1-928a-f844057ba11c" absoluteBounds="9, 5, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/Modelo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="67f59777-f4df-4458-a7ac-3b25a69424cc" absoluteBounds="9.015, 5.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6e75def7-4326-4e4c-a340-135107af85ac" absoluteBounds="11.75, 14, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/Notificacoe" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c979168a-1198-4811-9456-dd7c8f851218" absoluteBounds="11.765, 14.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9fa58b9a-4e3c-4510-a38f-46a8f30b2c24" absoluteBounds="6.25, 11.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/Pessoa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5536773b-bf00-4e93-8373-39874331f6ed" absoluteBounds="6.265, 11.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="490dd124-f960-4dab-89de-952b8bc0052c" absoluteBounds="11.75, 10.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/Projeto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="72bd9f6e-aff2-4cad-ab56-556fbc7e934e" absoluteBounds="11.765, 10.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d2cb6407-cf38-4c88-a946-690de67f23ea" absoluteBounds="20.5, 11.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/ProjetosEmpresasCliente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1516a2da-c3fa-49ef-8f0f-4c27a92857dd" absoluteBounds="20.515, 12.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4a81ac15-9145-4186-8fb9-0d51ac2632b4" absoluteBounds="17.5, 19.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/Recurso" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5fc60970-87a4-45c8-a64a-da8792cf453d" absoluteBounds="17.515, 20.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e7e74c8e-dc7e-4df6-bcec-18d4897feded" absoluteBounds="9, 11.875, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/Telefone" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fce88f28-79bf-4121-b330-50547cd2442e" absoluteBounds="9.015, 12.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0e800f36-9c24-41ef-8254-bb82f891c425" absoluteBounds="14.75, 20.125, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/BDMyGProjectDataContext/Tipo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0c93105b-6815-40c3-8886-fc2ab6712038" absoluteBounds="14.765, 20.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(19.5 : 11.34375); (20.34375 : 11.34375); (20.34375 : 10.9728011067708)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Cronograma/Cronograma_CronogramaRecurso" />
+      <nodes>
+        <classShapeMoniker Id="5129d769-1aba-49f0-af1c-1d6ea15c6462" />
+        <classShapeMoniker Id="294677c2-9728-43f7-a22b-030bd9e8c41f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.65625 : 8.47280110677083); (16.65625 : 12.5857975260417); (17.0416666666667 : 12.5857975260417 : JumpStart); (17.2083333333333 : 12.5857975260417 : JumpEnd); (17.5 : 12.5857975260417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Atividade/Atividade_Cronograma" />
+      <nodes>
+        <classShapeMoniker Id="1eb00505-039b-4fac-89f3-29fc67283190" />
+        <classShapeMoniker Id="5129d769-1aba-49f0-af1c-1d6ea15c6462" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 8.11140055338542); (17.1041666666667 : 8.11140055338542 : JumpStart); (17.2708333333333 : 8.11140055338542 : JumpEnd); (17.5 : 8.11140055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Atividade/Atividade_Dependencia" />
+      <nodes>
+        <classShapeMoniker Id="1eb00505-039b-4fac-89f3-29fc67283190" />
+        <classShapeMoniker Id="70273811-fd2d-42b9-89f0-eda7dd1afc21" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 7.86820027669271); (17.1041666666667 : 7.86820027669271 : JumpStart); (17.2708333333333 : 7.86820027669271 : JumpEnd); (17.5 : 7.86820027669271)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Atividade/Atividade_Dependencia1" />
+      <nodes>
+        <classShapeMoniker Id="1eb00505-039b-4fac-89f3-29fc67283190" />
+        <classShapeMoniker Id="70273811-fd2d-42b9-89f0-eda7dd1afc21" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 16); (17.125 : 15.625); (17.125 : 11.7616467630208); (17.5 : 11.7616467630208)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Documento/Documento_Cronograma" />
+      <nodes>
+        <classShapeMoniker Id="4adf3b58-f079-48c1-84c4-432b81bb8cbc" />
+        <classShapeMoniker Id="5129d769-1aba-49f0-af1c-1d6ea15c6462" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 17.2604484049479); (14.5 : 17.2604484049479); (14.5 : 15.75); (15.75 : 15.75); (15.75 : 14.6362939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Cliente/Cliente_EmpresasCliente" />
+      <nodes>
+        <classShapeMoniker Id="8d6d58b3-516b-40c5-a194-7ae28e674531" />
+        <classShapeMoniker Id="054b9130-fd35-4fb1-840d-b2cf618a5213" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 10.03125); (12.1354141666667 : 10.03125 : JumpStart); (12.3020808333333 : 10.03125 : JumpEnd); (12.6666666666667 : 10.03125 : JumpStart); (12.8333333333333 : 10.03125 : JumpEnd); (16.609375 : 10.03125); (16.609375 : 13.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Empresa/Empresa_EmpresasCliente" />
+      <nodes>
+        <classShapeMoniker Id="7f349ea9-df3e-43a4-a2a8-e6cfec1f49a0" />
+        <classShapeMoniker Id="054b9130-fd35-4fb1-840d-b2cf618a5213" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 12.8469962565104); (3.5 : 12.8469962565104)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Estado/Estado_Cidade" />
+      <nodes>
+        <classShapeMoniker Id="66ae4643-5a9d-4cb3-8304-c16398078a23" />
+        <classShapeMoniker Id="94b1fe2f-4e69-4248-9c07-090a7c95588c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 4.53626164523237); (17.1875 : 4.97376164523237); (17.1875 : 11.3495713815104); (17.5 : 11.3495713815104)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Fase/Fase_Cronograma" />
+      <nodes>
+        <classShapeMoniker Id="a8dfb65e-12bc-45ae-9494-c3f3cd4e36b0" />
+        <classShapeMoniker Id="5129d769-1aba-49f0-af1c-1d6ea15c6462" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 3.36187832261619); (18.5 : 3.36187832261619); (18.5 : 7.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Fase/Fase_Dependencia" />
+      <nodes>
+        <classShapeMoniker Id="a8dfb65e-12bc-45ae-9494-c3f3cd4e36b0" />
+        <classShapeMoniker Id="70273811-fd2d-42b9-89f0-eda7dd1afc21" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 3.94906998392428); (17.9687475 : 3.94906998392428); (17.9687475 : 7.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Fase/Fase_Dependencia1" />
+      <nodes>
+        <classShapeMoniker Id="a8dfb65e-12bc-45ae-9494-c3f3cd4e36b0" />
+        <classShapeMoniker Id="70273811-fd2d-42b9-89f0-eda7dd1afc21" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 14.7892976888021); (11.75 : 14.7892976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Gerente/Gerente_Notificacoe" />
+      <nodes>
+        <classShapeMoniker Id="589e47b2-90d8-4caf-9ec3-fceae5767ef4" />
+        <classShapeMoniker Id="6e75def7-4326-4e4c-a340-135107af85ac" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.25 : 14.2324039713542); (7.25 : 17.2604484049479); (9 : 17.2604484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Pessoa/Pessoa_Cliente" />
+      <nodes>
+        <classShapeMoniker Id="9fa58b9a-4e3c-4510-a38f-46a8f30b2c24" />
+        <classShapeMoniker Id="8d6d58b3-516b-40c5-a194-7ae28e674531" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 12.8662019856771); (8.41666666666667 : 12.8662019856771 : JumpStart); (8.58333333333333 : 12.8662019856771 : JumpEnd); (8.75 : 12.8662019856771); (8.75 : 13.5112939453125); (11.2916666666667 : 13.5112939453125 : JumpStart); (11.4583333333333 : 13.5112939453125 : JumpEnd); (12.6666666666667 : 13.5112939453125 : JumpStart); (12.8333333333333 : 13.5112939453125 : JumpEnd); (14.1666666666667 : 13.5112939453125 : JumpStart); (14.3333333333333 : 13.5112939453125 : JumpEnd); (14.5 : 13.5112939453125); (14.5 : 13); (15.5 : 13); (15.5 : 12.3381982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Pessoa/Pessoa_Comentario" />
+      <nodes>
+        <classShapeMoniker Id="9fa58b9a-4e3c-4510-a38f-46a8f30b2c24" />
+        <classShapeMoniker Id="081f45aa-9fcf-4972-97f3-89a0e88bb4cd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.25 : 11.5); (7.25 : 8.31814697265625); (9 : 8.31814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Pessoa/Pessoa_Email" />
+      <nodes>
+        <classShapeMoniker Id="9fa58b9a-4e3c-4510-a38f-46a8f30b2c24" />
+        <classShapeMoniker Id="97ea8c07-a027-42f2-a146-d3f6fbe75555" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.7812525 : 11.5); (7.7812525 : 10.4431469726562); (9 : 10.4431469726562)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Pessoa/Pessoa_Empresa" />
+      <nodes>
+        <classShapeMoniker Id="9fa58b9a-4e3c-4510-a38f-46a8f30b2c24" />
+        <classShapeMoniker Id="7f349ea9-df3e-43a4-a2a8-e6cfec1f49a0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.7812525 : 14.2324039713542); (7.7812525 : 14.9367521744792); (9 : 14.9367521744792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Pessoa/Pessoa_Gerente" />
+      <nodes>
+        <classShapeMoniker Id="9fa58b9a-4e3c-4510-a38f-46a8f30b2c24" />
+        <classShapeMoniker Id="589e47b2-90d8-4caf-9ec3-fceae5767ef4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 12.1518489928385); (8.5 : 12.1518489928385); (8.5 : 13.7612939453125); (11.1553727213542 : 13.7612939453125 : JumpStart); (11.3220393880208 : 13.7612939453125 : JumpEnd); (12.6666666666667 : 13.7612939453125 : JumpStart); (12.8333333333333 : 13.7612939453125 : JumpEnd); (14.25 : 13.7612939453125); (14.25 : 13.0833968098958); (14.4166666666667 : 13.0833968098958 : JumpStart); (14.5833333333333 : 13.0833968098958 : JumpEnd); (16.5260416666667 : 13.0833968098958 : JumpStart); (16.7864583333333 : 13.0833968098958 : JumpEnd); (17.0416666666667 : 13.0833968098958 : JumpStart); (17.2083333333333 : 13.0833968098958 : JumpEnd); (18.5 : 13.0833968098958); (18.5 : 13.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Pessoa/Pessoa_Log" />
+      <nodes>
+        <classShapeMoniker Id="9fa58b9a-4e3c-4510-a38f-46a8f30b2c24" />
+        <classShapeMoniker Id="80625c8b-ac1f-4cb7-ae9d-9c29f7d35542" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 12.9431469726562); (6.25 : 12.9431469726562)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Cidade/Cidade_Pessoa" />
+      <nodes>
+        <classShapeMoniker Id="94b1fe2f-4e69-4248-9c07-090a7c95588c" />
+        <classShapeMoniker Id="9fa58b9a-4e3c-4510-a38f-46a8f30b2c24" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 11.4190991210937); (14.5 : 11.4190991210937)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Projeto/Projeto_Comentario" />
+      <nodes>
+        <classShapeMoniker Id="490dd124-f960-4dab-89de-952b8bc0052c" />
+        <classShapeMoniker Id="081f45aa-9fcf-4972-97f3-89a0e88bb4cd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 12.4307478841146); (13.9166666666667 : 12.4307478841146 : JumpStart); (14.0833333333333 : 12.4307478841146 : JumpEnd); (15.4166666666667 : 12.4307478841146 : JumpStart); (15.5833333333333 : 12.4307478841146 : JumpEnd); (16.5260416666667 : 12.4307478841146 : JumpStart); (16.7395833333333 : 12.4307478841146 : JumpEnd); (17.0416666666667 : 12.4307478841146 : JumpStart); (17.2083333333333 : 12.4307478841146 : JumpEnd); (17.5 : 12.4307478841146)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Projeto/Projeto_Cronograma" />
+      <nodes>
+        <classShapeMoniker Id="490dd124-f960-4dab-89de-952b8bc0052c" />
+        <classShapeMoniker Id="5129d769-1aba-49f0-af1c-1d6ea15c6462" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.75 : 10.5); (12.75 : 9.220400390625); (16.5729166666667 : 9.220400390625 : JumpStart); (16.7395833333333 : 9.220400390625 : JumpEnd); (17.1041666666667 : 9.220400390625 : JumpStart); (17.2708333333333 : 9.220400390625 : JumpEnd); (17.5 : 9.220400390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Projeto/Projeto_Dependencia" />
+      <nodes>
+        <classShapeMoniker Id="490dd124-f960-4dab-89de-952b8bc0052c" />
+        <classShapeMoniker Id="70273811-fd2d-42b9-89f0-eda7dd1afc21" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 11.9249235026042); (14 : 11.9249235026042); (14 : 13.1458968098958); (14.4166666666667 : 13.1458968098958 : JumpStart); (14.5833333333333 : 13.1458968098958 : JumpEnd); (16.5260416666667 : 13.1458968098958 : JumpStart); (16.7864583333333 : 13.1458968098958 : JumpEnd); (17.0416666666667 : 13.1458968098958 : JumpStart); (17.2083333333333 : 13.1458968098958 : JumpEnd); (17.968748 : 13.1458968098958); (17.968748 : 13.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Projeto/Projeto_Log" />
+      <nodes>
+        <classShapeMoniker Id="490dd124-f960-4dab-89de-952b8bc0052c" />
+        <classShapeMoniker Id="80625c8b-ac1f-4cb7-ae9d-9c29f7d35542" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.75 : 13.2324039713542); (12.75 : 14)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Projeto/Projeto_Notificacoe" />
+      <nodes>
+        <classShapeMoniker Id="490dd124-f960-4dab-89de-952b8bc0052c" />
+        <classShapeMoniker Id="6e75def7-4326-4e4c-a340-135107af85ac" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 14); (11.375 : 13.625); (11.375 : 11.8662019856771); (11.75 : 11.8662019856771)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Gerente/Gerente_Projeto" />
+      <nodes>
+        <classShapeMoniker Id="589e47b2-90d8-4caf-9ec3-fceae5767ef4" />
+        <classShapeMoniker Id="490dd124-f960-4dab-89de-952b8bc0052c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 5.88544840494792); (12.2187475 : 5.88544840494792); (12.2187475 : 10.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Modelo/Modelo_Projeto" />
+      <nodes>
+        <classShapeMoniker Id="b83e4b20-ab39-46a1-928a-f844057ba11c" />
+        <classShapeMoniker Id="490dd124-f960-4dab-89de-952b8bc0052c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 12.8541984049479); (13.9166666666667 : 12.8541984049479 : JumpStart); (14.0833333333333 : 12.8541984049479 : JumpEnd); (15.4166666666667 : 12.8541984049479 : JumpStart); (15.5833333333333 : 12.8541984049479 : JumpEnd); (16.5260416666667 : 12.8541984049479 : JumpStart); (16.6927083333333 : 12.8541984049479 : JumpEnd); (17.0416666666667 : 12.8541984049479 : JumpStart); (17.2083333333333 : 12.8541984049479 : JumpEnd); (20.2291641666667 : 12.8541984049479 : JumpStart); (20.3958308333333 : 12.8541984049479 : JumpEnd); (20.5 : 12.8541984049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Projeto/Projeto_ProjetosEmpresasCliente" />
+      <nodes>
+        <classShapeMoniker Id="490dd124-f960-4dab-89de-952b8bc0052c" />
+        <classShapeMoniker Id="d2cb6407-cf38-4c88-a946-690de67f23ea" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.703125 : 13.25); (16.703125 : 12.958351702474); (17.0416666666667 : 12.958351702474 : JumpStart); (17.2083333333333 : 12.958351702474 : JumpEnd); (20.2291641666667 : 12.958351702474 : JumpStart); (20.3958308333333 : 12.958351702474 : JumpEnd); (20.5 : 12.958351702474)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/EmpresasCliente/EmpresasCliente_ProjetosEmpresasCliente" />
+      <nodes>
+        <classShapeMoniker Id="054b9130-fd35-4fb1-840d-b2cf618a5213" />
+        <classShapeMoniker Id="d2cb6407-cf38-4c88-a946-690de67f23ea" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(19.5 : 20.8277498372396); (20.3124975 : 20.8277498372396); (20.3124975 : 10.9728011067708)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Recurso/Recurso_CronogramaRecurso" />
+      <nodes>
+        <classShapeMoniker Id="4a81ac15-9145-4186-8fb9-0d51ac2632b4" />
+        <classShapeMoniker Id="294677c2-9728-43f7-a22b-030bd9e8c41f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 12.5090254892578); (8.41666666666667 : 12.5090254892578 : JumpStart); (8.58333333333333 : 12.5090254892578 : JumpEnd); (9 : 12.5090254892578)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Pessoa/Pessoa_Telefone" />
+      <nodes>
+        <classShapeMoniker Id="9fa58b9a-4e3c-4510-a38f-46a8f30b2c24" />
+        <classShapeMoniker Id="e7e74c8e-dc7e-4df6-bcec-18d4897feded" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 20.8181469726563); (17.5 : 20.8181469726563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BDMyGProjectDataContext/Tipo/Tipo_Recurso" />
+      <nodes>
+        <classShapeMoniker Id="0e800f36-9c24-41ef-8254-bb82f891c425" />
+        <classShapeMoniker Id="4a81ac15-9145-4186-8fb9-0d51ac2632b4" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

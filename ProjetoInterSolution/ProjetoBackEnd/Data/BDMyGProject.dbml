@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="mygproject" Class="BDMyGProjectDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=HANNA-PC;Initial Catalog=mygproject;Persist Security Info=True;User ID=root" SettingsObjectName="ProjetoBackEnd.Properties.Settings" SettingsPropertyName="mygprojectConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Atividades" Member="Atividades">
+    <Type Name="Atividade">
+      <Column Name="numero" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nome" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="descricao" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="data_inicio" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="data_termino" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="qtd_hora" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="porc_completo" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Atividade_Cronograma" Member="Cronogramas" ThisKey="numero" OtherKey="atividade_numero" Type="Cronograma" />
+      <Association Name="Atividade_Dependencia" Member="Dependencias" ThisKey="numero" OtherKey="atividadePrincipal" Type="Dependencia" />
+      <Association Name="Atividade_Dependencia1" Member="Dependencias1" ThisKey="numero" OtherKey="atividadeDependente" Type="Dependencia" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cidades" Member="Cidades">
+    <Type Name="Cidade">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nome" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="estado_sigla" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Association Name="Cidade_Pessoa" Member="Pessoas" ThisKey="id" OtherKey="cidade_id" Type="Pessoa" />
+      <Association Name="Estado_Cidade" Member="Estado" ThisKey="estado_sigla" OtherKey="sigla" Type="Estado" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Clientes" Member="Clientes">
+    <Type Name="Cliente">
+      <Column Name="pessoa_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="cpf" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="profissao" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="login" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="senha" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Cliente_EmpresasCliente" Member="EmpresasClientes" ThisKey="pessoa_id" OtherKey="cliente_id" Type="EmpresasCliente" />
+      <Association Name="Pessoa_Cliente" Member="Pessoa" ThisKey="pessoa_id" OtherKey="id" Type="Pessoa" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Comentarios" Member="Comentarios">
+    <Type Name="Comentario">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="projeto_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pessoa_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="descricao" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="data_hora" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Pessoa_Comentario" Member="Pessoa" ThisKey="pessoa_id" OtherKey="id" Type="Pessoa" IsForeignKey="true" />
+      <Association Name="Projeto_Comentario" Member="Projeto" ThisKey="projeto_codigo" OtherKey="codigo" Type="Projeto" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CronogramaRecursos" Member="CronogramaRecursos">
+    <Type Name="CronogramaRecurso">
+      <Column Name="projeto_codigo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="fase_numero" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="atividade_numero" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="recurso_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="qtd_hora_usada" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="qtd_unid_usada" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="valortotal" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Cronograma_CronogramaRecurso" Member="Cronograma" ThisKey="projeto_codigo,fase_numero,atividade_numero" OtherKey="projeto_codigo,fase_numero,atividade_numero" Type="Cronograma" IsForeignKey="true" />
+      <Association Name="Recurso_CronogramaRecurso" Member="Recurso" ThisKey="recurso_id" OtherKey="id" Type="Recurso" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cronogramas" Member="Cronogramas">
+    <Type Name="Cronograma">
+      <Column Name="projeto_codigo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="fase_numero" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="atividade_numero" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="documento_numero" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Cronograma_CronogramaRecurso" Member="CronogramaRecursos" ThisKey="projeto_codigo,fase_numero,atividade_numero" OtherKey="projeto_codigo,fase_numero,atividade_numero" Type="CronogramaRecurso" />
+      <Association Name="Atividade_Cronograma" Member="Atividade" ThisKey="atividade_numero" OtherKey="numero" Type="Atividade" IsForeignKey="true" />
+      <Association Name="Documento_Cronograma" Member="Documento" ThisKey="documento_numero" OtherKey="numero" Type="Documento" IsForeignKey="true" />
+      <Association Name="Fase_Cronograma" Member="Fase" ThisKey="fase_numero" OtherKey="numero" Type="Fase" IsForeignKey="true" />
+      <Association Name="Projeto_Cronograma" Member="Projeto" ThisKey="projeto_codigo" OtherKey="codigo" Type="Projeto" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Dependencias" Member="Dependencias">
+    <Type Name="Dependencia">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="projeto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fasePrincipal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="atividadePrincipal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="faseDependente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="atividadeDependente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tipo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Atividade_Dependencia" Member="Atividade" ThisKey="atividadePrincipal" OtherKey="numero" Type="Atividade" IsForeignKey="true" />
+      <Association Name="Atividade_Dependencia1" Member="Atividade1" ThisKey="atividadeDependente" OtherKey="numero" Type="Atividade" IsForeignKey="true" />
+      <Association Name="Fase_Dependencia" Member="Fase" ThisKey="faseDependente" OtherKey="numero" Type="Fase" IsForeignKey="true" />
+      <Association Name="Fase_Dependencia1" Member="Fase1" ThisKey="fasePrincipal" OtherKey="numero" Type="Fase" IsForeignKey="true" />
+      <Association Name="Projeto_Dependencia" Member="Projeto1" ThisKey="projeto" OtherKey="codigo" Type="Projeto" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Documentos" Member="Documentos">
+    <Type Name="Documento">
+      <Column Name="numero" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nome" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="tipo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="local" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Documento_Cronograma" Member="Cronogramas" ThisKey="numero" OtherKey="documento_numero" Type="Cronograma" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Emails" Member="Emails">
+    <Type Name="Email">
+      <Column Name="pessoa_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="endereco" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Pessoa_Email" Member="Pessoa" ThisKey="pessoa_id" OtherKey="id" Type="Pessoa" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Empresas" Member="Empresas">
+    <Type Name="Empresa">
+      <Column Name="pessoa_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="cnpj" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="area_de_atuacao" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Empresa_EmpresasCliente" Member="EmpresasClientes" ThisKey="pessoa_id" OtherKey="empresa_id" Type="EmpresasCliente" />
+      <Association Name="Pessoa_Empresa" Member="Pessoa" ThisKey="pessoa_id" OtherKey="id" Type="Pessoa" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EmpresasClientes" Member="EmpresasClientes">
+    <Type Name="EmpresasCliente">
+      <Column Name="empresa_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="cliente_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="EmpresasCliente_ProjetosEmpresasCliente" Member="ProjetosEmpresasClientes" ThisKey="empresa_id,cliente_id" OtherKey="empresa_id,cliente_id" Type="ProjetosEmpresasCliente" />
+      <Association Name="Cliente_EmpresasCliente" Member="Cliente" ThisKey="cliente_id" OtherKey="pessoa_id" Type="Cliente" IsForeignKey="true" />
+      <Association Name="Empresa_EmpresasCliente" Member="Empresa" ThisKey="empresa_id" OtherKey="pessoa_id" Type="Empresa" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Estados" Member="Estados">
+    <Type Name="Estado">
+      <Column Name="sigla" Type="System.String" DbType="Char(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nome" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Estado_Cidade" Member="Cidades" ThisKey="sigla" OtherKey="estado_sigla" Type="Cidade" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Fases" Member="Fases">
+    <Type Name="Fase">
+      <Column Name="numero" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nome" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="descricao" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="data_inicio" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="data_termino" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="porc_completo" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="dias_usados" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Fase_Cronograma" Member="Cronogramas" ThisKey="numero" OtherKey="fase_numero" Type="Cronograma" />
+      <Association Name="Fase_Dependencia" Member="Dependencias" ThisKey="numero" OtherKey="faseDependente" Type="Dependencia" />
+      <Association Name="Fase_Dependencia1" Member="Dependencias1" ThisKey="numero" OtherKey="fasePrincipal" Type="Dependencia" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Gerentes" Member="Gerentes">
+    <Type Name="Gerente">
+      <Column Name="pessoa_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="cpf" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="login" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="senha" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Gerente_Notificacoe" Member="Notificacoes" ThisKey="pessoa_id" OtherKey="gerente_id" Type="Notificacoe" />
+      <Association Name="Gerente_Projeto" Member="Projetos" ThisKey="pessoa_id" OtherKey="gerente_id" Type="Projeto" />
+      <Association Name="Pessoa_Gerente" Member="Pessoa" ThisKey="pessoa_id" OtherKey="id" Type="Pessoa" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Logs" Member="Logs">
+    <Type Name="Log">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="projeto_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pessoa_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="descricao" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="data_hora" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Pessoa_Log" Member="Pessoa" ThisKey="pessoa_id" OtherKey="id" Type="Pessoa" IsForeignKey="true" />
+      <Association Name="Projeto_Log" Member="Projeto" ThisKey="projeto_codigo" OtherKey="codigo" Type="Projeto" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Modelos" Member="Modelos">
+    <Type Name="Modelo">
+      <Column Name="numero" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nome" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="descricao" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="projeto_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Modelo_Projeto" Member="Projetos" ThisKey="numero" OtherKey="modelo_numero" Type="Projeto" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Notificacoes" Member="Notificacoes">
+    <Type Name="Notificacoe">
+      <Column Name="numero" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="projeto_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="informacao" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="gerente_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Gerente_Notificacoe" Member="Gerente" ThisKey="gerente_id" OtherKey="pessoa_id" Type="Gerente" IsForeignKey="true" />
+      <Association Name="Projeto_Notificacoe" Member="Projeto" ThisKey="projeto_codigo" OtherKey="codigo" Type="Projeto" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Pessoas" Member="Pessoas">
+    <Type Name="Pessoa">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nome" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="cep" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="logradouro" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="numero" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="complemento" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="bairro" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="cidade_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="imagem" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Pessoa_Cliente" Member="Cliente" ThisKey="id" OtherKey="pessoa_id" Type="Cliente" Cardinality="One" />
+      <Association Name="Pessoa_Comentario" Member="Comentarios" ThisKey="id" OtherKey="pessoa_id" Type="Comentario" />
+      <Association Name="Pessoa_Email" Member="Emails" ThisKey="id" OtherKey="pessoa_id" Type="Email" />
+      <Association Name="Pessoa_Empresa" Member="Empresa" ThisKey="id" OtherKey="pessoa_id" Type="Empresa" Cardinality="One" />
+      <Association Name="Pessoa_Gerente" Member="Gerente" ThisKey="id" OtherKey="pessoa_id" Type="Gerente" Cardinality="One" />
+      <Association Name="Pessoa_Log" Member="Logs" ThisKey="id" OtherKey="pessoa_id" Type="Log" />
+      <Association Name="Pessoa_Telefone" Member="Telefones" ThisKey="id" OtherKey="pessoa_id" Type="Telefone" />
+      <Association Name="Cidade_Pessoa" Member="Cidade" ThisKey="cidade_id" OtherKey="id" Type="Cidade" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Projetos" Member="Projetos">
+    <Type Name="Projeto">
+      <Column Name="codigo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nome" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="gerente_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="modelo_numero" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="data_inicio" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="data_termino" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="valor_previsto" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="valor_utilizado" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="porc_completo" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Projeto_Comentario" Member="Comentarios" ThisKey="codigo" OtherKey="projeto_codigo" Type="Comentario" />
+      <Association Name="Projeto_Cronograma" Member="Cronogramas" ThisKey="codigo" OtherKey="projeto_codigo" Type="Cronograma" />
+      <Association Name="Projeto_Dependencia" Member="Dependencias" ThisKey="codigo" OtherKey="projeto" Type="Dependencia" />
+      <Association Name="Projeto_Log" Member="Logs" ThisKey="codigo" OtherKey="projeto_codigo" Type="Log" />
+      <Association Name="Projeto_Notificacoe" Member="Notificacoes" ThisKey="codigo" OtherKey="projeto_codigo" Type="Notificacoe" />
+      <Association Name="Projeto_ProjetosEmpresasCliente" Member="ProjetosEmpresasClientes" ThisKey="codigo" OtherKey="projeto_codigo" Type="ProjetosEmpresasCliente" />
+      <Association Name="Gerente_Projeto" Member="Gerente" ThisKey="gerente_id" OtherKey="pessoa_id" Type="Gerente" IsForeignKey="true" />
+      <Association Name="Modelo_Projeto" Member="Modelo" ThisKey="modelo_numero" OtherKey="numero" Type="Modelo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProjetosEmpresasClientes" Member="ProjetosEmpresasClientes">
+    <Type Name="ProjetosEmpresasCliente">
+      <Column Name="projeto_codigo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="empresa_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="cliente_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Projeto_ProjetosEmpresasCliente" Member="Projeto" ThisKey="projeto_codigo" OtherKey="codigo" Type="Projeto" IsForeignKey="true" />
+      <Association Name="EmpresasCliente_ProjetosEmpresasCliente" Member="EmpresasCliente" ThisKey="empresa_id,cliente_id" OtherKey="empresa_id,cliente_id" Type="EmpresasCliente" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Recursos" Member="Recursos">
+    <Type Name="Recurso">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="descricao" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="qtd_hora_disponivel" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="qtd_unid_disponivel" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="valor" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="tipo_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Recurso_CronogramaRecurso" Member="CronogramaRecursos" ThisKey="id" OtherKey="recurso_id" Type="CronogramaRecurso" />
+      <Association Name="Tipo_Recurso" Member="Tipo" ThisKey="tipo_id" OtherKey="id" Type="Tipo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Telefones" Member="Telefones">
+    <Type Name="Telefone">
+      <Column Name="pessoa_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="numero" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Pessoa_Telefone" Member="Pessoa" ThisKey="pessoa_id" OtherKey="id" Type="Pessoa" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tipos" Member="Tipos">
+    <Type Name="Tipo">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="descricao" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Tipo_Recurso" Member="Recursos" ThisKey="id" OtherKey="tipo_id" Type="Recurso" />
+    </Type>
+  </Table>
+</Database>

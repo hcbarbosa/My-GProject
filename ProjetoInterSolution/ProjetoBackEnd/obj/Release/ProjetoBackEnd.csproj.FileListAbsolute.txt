@@ -1,0 +1,5 @@
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoBackEnd\bin\Release\ProjetoBackEnd.dll.config
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoBackEnd\bin\Release\ProjetoBackEnd.dll
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoBackEnd\bin\Release\ProjetoBackEnd.pdb
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoBackEnd\obj\Release\ProjetoBackEnd.dll
+F:\Documents\Visual Studio 2012\Projects\ProjetoInterSolution\ProjetoBackEnd\obj\Release\ProjetoBackEnd.pdb
